@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EA2677521E70326000143981 /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2677511E70326000143981 /* DemoURL.swift */; };
+		EAACBCE31E76D90400DC5018 /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAACBCE21E76D90400DC5018 /* CassiniViewController.swift */; };
 		EAC422671E702BF900C4AA03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC422661E702BF900C4AA03 /* AppDelegate.swift */; };
 		EAC4226C1E702BF900C4AA03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC4226A1E702BF900C4AA03 /* Main.storyboard */; };
 		EAC4226E1E702BF900C4AA03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC4226D1E702BF900C4AA03 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		EA2677511E70326000143981 /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
+		EAACBCE21E76D90400DC5018 /* CassiniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
 		EAC422631E702BF900C4AA03 /* Cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cassini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC422661E702BF900C4AA03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAC4226B1E702BF900C4AA03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,8 +58,9 @@
 		EAC422651E702BF900C4AA03 /* Cassini */ = {
 			isa = PBXGroup;
 			children = (
-				EAC4227B1E702C8700C4AA03 /* ImageViewController.swift */,
 				EAC4226A1E702BF900C4AA03 /* Main.storyboard */,
+				EAC4227B1E702C8700C4AA03 /* ImageViewController.swift */,
+				EAACBCE21E76D90400DC5018 /* CassiniViewController.swift */,
 				EA2677511E70326000143981 /* DemoURL.swift */,
 				EAC422721E702BF900C4AA03 /* Info.plist */,
 				EAC422781E702C0900C4AA03 /* Supporting Files */,
@@ -85,6 +88,7 @@
 				EAC4225F1E702BF900C4AA03 /* Sources */,
 				EAC422601E702BF900C4AA03 /* Frameworks */,
 				EAC422611E702BF900C4AA03 /* Resources */,
+				EAE8AC8A1E7050C700156570 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -143,6 +147,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EAE8AC8A1E7050C700156570 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EAC4225F1E702BF900C4AA03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -151,6 +171,7 @@
 				EAC4227C1E702C8700C4AA03 /* ImageViewController.swift in Sources */,
 				EAC422671E702BF900C4AA03 /* AppDelegate.swift in Sources */,
 				EA2677521E70326000143981 /* DemoURL.swift in Sources */,
+				EAACBCE31E76D90400DC5018 /* CassiniViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
