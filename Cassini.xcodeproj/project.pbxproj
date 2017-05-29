@@ -59,8 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				EAC4226A1E702BF900C4AA03 /* Main.storyboard */,
-				EAC4227B1E702C8700C4AA03 /* ImageViewController.swift */,
 				EAACBCE21E76D90400DC5018 /* CassiniViewController.swift */,
+				EAC4227B1E702C8700C4AA03 /* ImageViewController.swift */,
 				EA2677511E70326000143981 /* DemoURL.swift */,
 				EAC422721E702BF900C4AA03 /* Info.plist */,
 				EAC422781E702C0900C4AA03 /* Supporting Files */,
@@ -111,7 +111,7 @@
 				TargetAttributes = {
 					EAC422621E702BF900C4AA03 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = X5SVCNCD2D;
+						DevelopmentTeam = X9669MJ564;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -294,10 +294,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X5SVCNCD2D;
+				DEVELOPMENT_TEAM = X9669MJ564;
 				INFOPLIST_FILE = Cassini/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DeimanTechnology.Cassini;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chyiyaqing.gmail.Cassini;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -307,10 +307,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X5SVCNCD2D;
+				DEVELOPMENT_TEAM = X9669MJ564;
 				INFOPLIST_FILE = Cassini/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DeimanTechnology.Cassini;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chyiyaqing.gmail.Cassini;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

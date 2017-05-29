@@ -45,6 +45,7 @@ class CassiniViewController: UIViewController, UISplitViewControllerDelegate {
 
 // MARK: - Extension to UIViewController, in case it is in a NavigationController
 extension UIViewController {
+    // Computed var
     var contents: UIViewController {
         if let navcon = self as? UINavigationController {
             return navcon.visibleViewController ?? self

@@ -26,12 +26,15 @@ class ImageViewController: UIViewController
     /** Fetch the data asynchronously on a different thread..
      */
     private func fetchImage() {
+        
         if  let url = imageURL {
             spinner.startAnimating()
             // maintain responsiveness of your UI by using a different thread...
             // But user might be waiting, so QoS = .userInitiated, which is high
-            DispatchQueue.global(qos: .userInitiated).async { [weak self] in
+            DispatchQueue.global(qos: .userInitiated).async {
+                [weak self] in
                 let urlContents = try? Data(contentsOf: url)
+                
                 if let imageData = urlContents, url == self?.imageURL {
                     // UI stuff is done on the Main Queue...
                     DispatchQueue.main.async {
